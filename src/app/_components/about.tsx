@@ -1,5 +1,6 @@
 "use client"
 import { Martini, Users, Trophy, Clock } from '@phosphor-icons/react'
+import { SectionTitle } from './section-title'
 
 export function About() {
     return (
@@ -8,9 +9,9 @@ export function About() {
                 <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
                     {/* Texto */}
                     <div className="space-y-6">
-                        <h2 className="text-4xl font-bold text-white">
+                        <SectionTitle>
                             Sobre o <span className="text-amber-500">Lucky Bar</span>
-                        </h2>
+                        </SectionTitle>
                         <p className="text-lg text-gray-300 leading-relaxed">
                             Transformamos eventos em experiências memoráveis. Com anos de expertise em bar service, 
                             oferecemos atendimento de excelência e drinks personalizados para tornar sua celebração única.

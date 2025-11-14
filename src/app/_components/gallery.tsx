@@ -2,6 +2,7 @@
 import Image from 'next/image'
 import { useState } from 'react'
 import { X } from '@phosphor-icons/react'
+import { SectionTitle } from './section-title'
 // Importar as imagens da raiz do public
 import gallery1 from '../../../public/gallery-1.jpg'
 import gallery2 from '../../../public/gallery-2.jpg'
@@ -24,9 +25,11 @@ export function Gallery() {
         <section id="galeria" className="bg-zinc-900 py-16">
             <div className="container mx-auto px-4">
                 <div className="text-center mb-12">
-                    <h2 className="text-4xl font-bold text-white mb-4">
-                        Nossa <span className="text-amber-500">Galeria</span>
-                    </h2>
+                    <div className="flex justify-center">
+                        <SectionTitle>
+                            Nossa <span className="text-amber-500">Galeria</span>
+                        </SectionTitle>
+                    </div>
                     <p className="text-gray-400 max-w-2xl mx-auto">
                         Confira alguns dos eventos que já realizamos
                     </p>

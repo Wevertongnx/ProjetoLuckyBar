@@ -1,5 +1,6 @@
 "use client"
 import { Champagne, Confetti, Heart, Cake } from '@phosphor-icons/react'
+import { SectionTitle } from './section-title'
 
 export function Services() {
     const services = [
@@ -29,9 +30,11 @@ export function Services() {
         <section id="servicos" className="bg-black text-white py-16">
             <div className="container mx-auto px-4">
                 <div className="text-center mb-12">
-                    <h2 className="text-4xl font-bold mb-4">
-                        Nossos <span className="text-amber-500">Serviços</span>
-                    </h2>
+                    <div className="flex justify-center">
+                        <SectionTitle>
+                            Nossos <span className="text-amber-500">Serviços</span>
+                        </SectionTitle>
+                    </div>
                     <p className="text-gray-400 max-w-2xl mx-auto">
                         Oferecemos soluções completas para diversos tipos de eventos
                     </p>
