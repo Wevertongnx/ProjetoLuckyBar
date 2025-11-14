@@ -2,17 +2,22 @@
 import Image from 'next/image'
 import { useState } from 'react'
 import { X } from '@phosphor-icons/react'
+// Importar as imagens diretamente
+import gallery1 from '../../../public/gallery/gallery-1.jpg'
+import gallery2 from '../../../public/gallery/gallery-2.jpg'
+import gallery3 from '../../../public/gallery/gallery-3.jpg'
+import gallery4 from '../../../public/gallery/gallery-4.jpg'
+import gallery5 from '../../../public/gallery/gallery-5.jpg'
 
 export function Gallery() {
     const [selectedImage, setSelectedImage] = useState<number | null>(null)
 
     const images = [
-        { src: '/gallery/gallery-1.jpg', alt: 'Lucky Bar - Evento 1' },
-        { src: '/gallery/gallery-2.jpg', alt: 'Lucky Bar - Evento 2' },
-        { src: '/gallery/gallery-3.jpg', alt: 'Lucky Bar - Evento 3' },
-        { src: '/gallery/gallery-4.jpg', alt: 'Lucky Bar - Evento 4' },
-        { src: '/gallery/gallery-5.jpg', alt: 'Lucky Bar - Evento 5' },
-        { src: '/gallery/gallery-6.jpg', alt: 'Lucky Bar - Evento 6' },
+        { src: gallery1, alt: 'Lucky Bar - Evento 1' },
+        { src: gallery2, alt: 'Lucky Bar - Evento 2' },
+        { src: gallery3, alt: 'Lucky Bar - Evento 3' },
+        { src: gallery4, alt: 'Lucky Bar - Evento 4' },
+        { src: gallery5, alt: 'Lucky Bar - Evento 5' },
     ]
 
     return (
