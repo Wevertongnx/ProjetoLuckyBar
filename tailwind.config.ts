@@ -23,6 +23,9 @@ export default {
           'to': { width: '45%' }
         }
       },
+      fontFamily: {
+        script: ['var(--font-great-vibes)', 'cursive'],
+      },
     },
   },
   plugins: [require("tailwindcss-animate")],

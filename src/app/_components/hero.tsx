@@ -1,6 +1,7 @@
 "use client"
 import { WhatsappLogoIcon } from '@phosphor-icons/react'
 import lucky1 from '../../../public/gallery-2.jpg'
+import gallery4 from '../../../public/gallery-4.jpg'
 import Image from 'next/image'
 
 export function Hero() {
@@ -25,7 +26,7 @@ export function Hero() {
             <div className='container mx-auto pt-32 pb-16 md:pb-0 px-4 relative'>
                 <article className='grid grid-cols-1 lg:grid-cols-2 gap-8'>
                     <div className='space-y-6 relative z-10'>
-                        <h1 className="text-3xl md:text-3xl lg:text-4xl font-bold leading-10 text-white drop-shadow-[0_0_20px_rgba(217,119,6,0.85)]">
+                        <h1 className="font-[family-name:var(--font-great-vibes)] text-4xl md:text-5xl lg:text-6xl font-bold leading-tight text-white drop-shadow-[0_0_20px_rgba(217,119,6,0.85)]">
                             &ldquo;Atender bem é transformar clientes em amigos e momentos em memórias.&rdquo;
                         </h1>
 
@@ -43,6 +44,17 @@ export function Hero() {
                         <p className="text-sm">
                             <span className="bg-amber-600 text-white px-2 py-1 rounded-md">🍹</span> Garanta já o seu bar dos sonhos.
                         </p>
+
+                        {/* Imagem dos 3 drinks coloridos - mostra foto toda */}
+                        <div className="relative w-full h-80 rounded-lg overflow-hidden shadow-lg -mt-6">
+                            <Image
+                                src={gallery4}
+                                alt='três drinks coloridos no bar'
+                                fill
+                                className='object-contain'
+                                sizes='(max-width: 1024px) 100vw, 50vw'
+                            />
+                        </div>
                     </div>
 
                     <div className='hidden md:block relative -mt-16'>
