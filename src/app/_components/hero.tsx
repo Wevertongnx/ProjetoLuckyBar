@@ -1,6 +1,6 @@
 "use client"
 import { WhatsappLogoIcon } from '@phosphor-icons/react'
-import lucky1 from '../../../public/lucky1.jpg'
+import lucky1 from '../../../public/gallery-2.jpg' // Atualizado para o novo nome
 import Image from 'next/image'
 
 export function Hero() {
