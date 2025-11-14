@@ -1,11 +1,11 @@
 "use client"
 import { WhatsappLogoIcon } from '@phosphor-icons/react'
-import lucky1 from '../../../public/gallery-2.jpg' // Atualizado para o novo nome
+import lucky1 from '../../../public/gallery-2.jpg'
 import Image from 'next/image'
 
 export function Hero() {
     return (
-        <section className="bg-black text-white relative overflow-hidden">
+        <section id="home" className="bg-black text-white relative overflow-hidden">
             <div className="relative h-[420px] lg:hidden">
                 <Image
                     src={lucky1}
@@ -26,7 +26,7 @@ export function Hero() {
                 <article className='grid grid-cols-1 lg:grid-cols-2 gap-8'>
                     <div className='space-y-6 relative z-10'>
                         <h1 className="text-3xl md:text-3xl lg:text-4xl font-bold leading-10 text-white drop-shadow-[0_0_20px_rgba(217,119,6,0.85)]">
-                            "Atender bem é transformar clientes em amigos e momentos em memórias."
+                            &ldquo;Atender bem é transformar clientes em amigos e momentos em memórias.&rdquo;
                         </h1>
 
                         <p className="lg:text-lg">
@@ -35,7 +35,7 @@ export function Hero() {
 
                         <a
                             href="#"
-                            className="bg-amber-600 px-4 py-1 rounded-md font-semibold flex items-center gap-3 w-fit ring-2 ring-amber-500/40 hover:scale-105 transition-transform duration-200 hover:bg-amber-700">
+                            className="bg-green-600 px-4 py-1 rounded-md font-semibold flex items-center gap-3 w-fit ring-2 ring-amber-500/40 hover:scale-105 transition-transform duration-200 hover:bg-amber-700">
                             <WhatsappLogoIcon className='w-6 h-6' />
                             Contato via WhatsApp
                         </a>

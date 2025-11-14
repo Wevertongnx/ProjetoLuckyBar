@@ -3,7 +3,7 @@ import { InstagramLogo, WhatsappLogo, MapPin, Envelope } from '@phosphor-icons/r
 
 export function Footer() {
     return (
-        <footer className="bg-zinc-950 text-white py-12 border-t border-amber-900/20">
+        <footer id="contatos" className="bg-zinc-950 text-white py-12 border-t border-amber-900/20">
             <div className="container mx-auto px-4">
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
                     <div>
@@ -26,7 +26,7 @@ export function Footer() {
                             </a>
                             <div className="flex items-center gap-2 text-gray-400">
                                 <MapPin className="w-5 h-5" />
-                                <span>São Paulo, SP</span>
+                                <span>Campo Grande, MS</span>
                             </div>
                         </div>
                     </div>

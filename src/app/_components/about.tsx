@@ -3,7 +3,7 @@ import { Martini, Users, Trophy, Clock } from '@phosphor-icons/react'
 
 export function About() {
     return (
-        <section className="bg-zinc-900 py-16">
+        <section id="sobre" className="bg-zinc-900 py-16">
             <div className="container mx-auto px-4">
                 <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
                     {/* Texto */}
