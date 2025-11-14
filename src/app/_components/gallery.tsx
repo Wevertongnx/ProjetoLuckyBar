@@ -2,12 +2,12 @@
 import Image from 'next/image'
 import { useState } from 'react'
 import { X } from '@phosphor-icons/react'
-// Importar as imagens diretamente
-import gallery1 from '../../../public/gallery/gallery-1.jpg'
-import gallery2 from '../../../public/gallery/gallery-2.jpg'
-import gallery3 from '../../../public/gallery/gallery-3.jpg'
-import gallery4 from '../../../public/gallery/gallery-4.jpg'
-import gallery5 from '../../../public/gallery/gallery-5.jpg'
+// Importar as imagens da raiz do public
+import gallery1 from '../../../public/gallery-1.jpg'
+import gallery2 from '../../../public/gallery-2.jpg'
+import gallery3 from '../../../public/gallery-3.jpg'
+import gallery4 from '../../../public/gallery-4.jpg'
+import gallery5 from '../../../public/gallery-5.jpg'
 
 export function Gallery() {
     const [selectedImage, setSelectedImage] = useState<number | null>(null)
